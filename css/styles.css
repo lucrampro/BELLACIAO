@@ -1,0 +1,753 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+li,
+form,
+input,
+textarea,
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+ol {
+    list-style: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'gm';
+    src: url("../fonts/GothamMedium.ttf");
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'gl';
+    src: url("../fonts/GothamLight.ttf");
+    font-weight: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'kl';
+    src: url("../fonts/Karma-Light.ttf");
+    font-weight: normal;
+}
+
+/*___ DEBUT CSS ___*/
+
+
+body {
+
+    background: none;
+    color: #ffffff;
+    font-family: 'gl';
+
+   
+}
+
+a{
+    
+    text-decoration: none;
+    color: white;
+}
+
+a::hover{
+    
+    
+      color: #3cfccd;
+}
+
+.menuBurger {
+
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: solid 3px white;
+    z-index: 99;
+    top: 20px;
+    right: 20px;
+
+}
+
+.menu {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: 98;
+    overflow: hidden;
+}
+
+.vilage{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    background: url(../img/VillageMobile.png);
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.vilage p{
+    
+   margin-top: 20%;
+    height: 500px;
+    width: 200px;
+   
+    
+}
+
+.menuBot{
+    
+    background: #222222;
+    height: 40vh;
+    width: 100%;
+    top: 60%;
+    left: 0;
+    position: absolute;
+    
+}
+
+.menuBot ul {
+    
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    
+}
+
+.menuBot ul li {
+    
+   margin-top: 45px;
+    margin-left: 80px;
+    font-family: 'gm';
+    font-size: 1.3rem;
+    
+}
+
+.menuBot ul li:hover {
+    
+  color: #3cfccd;
+    
+}
+
+.menuBot .insta{
+    
+    
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    
+}
+
+.menuBot .insta img{
+    
+    width: 100%;
+}
+
+.englobe {
+
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+.trai1 {
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30%;
+    width: 20px;
+    height: 3px;
+    background: white;
+    transition: 0.1;
+
+
+}
+
+
+.trai2 {
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 3px;
+    background: white;
+    transition: 0.1;
+
+
+}
+
+
+.trai3 {
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 70%;
+    width: 20px;
+    height: 3px;
+    background: white;
+    transition: 0.1;
+
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+
+
+}
+
+.cacheH {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 500px;
+    z-index: 99;
+
+
+}
+
+h1 span {
+    display: inline-block;
+    transform: translateY(55px);
+    opacity: 0;
+
+}
+
+.gm {
+
+    font-family: 'gm';
+
+}
+
+.gl {
+
+    font-family: 'gl';
+}
+
+.day {
+
+    color: #eaeaea;
+    font-size: 0.8rem;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    font-family: 'kl';
+    text-transform: uppercase;
+    transform: translateY(20px);
+    opacity: 0;
+    text-align: center;
+
+
+}
+
+.cacheP {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 100%;
+
+}
+
+
+.presentation {
+
+    height: 100vh;
+    width: 100wh;
+    position: relative;
+
+}
+
+.scandini {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+
+}
+
+.lunette .relat {
+
+    background: url('../img/lunette.png');
+    background-size: cover;
+
+}
+
+.scandini .relat {
+
+    background: url('../img/Scandicci.jpg');
+    background-size: cover;
+
+}
+
+.scafati {
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+    width: 100%;
+
+}
+
+.scafati .relat {
+
+
+    background: url('../img/Scafati.png');
+    background-size: cover;
+
+}
+
+.relat {
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.relat ul li {
+
+    color: #ffffff;
+    width: 50%;
+    opacity: 1;
+    font-family: 'gm';
+    position: absolute;
+    font-size: 0.8rem;
+
+}
+
+
+.lunette .relat ul li {
+
+    color: black;
+
+
+}
+
+
+.relat ul .lione {
+
+    top: 65%;
+    left: 15%;
+
+
+}
+
+
+.relat ul .litwo {
+
+    top: 70%;
+    left: 15%;
+
+
+}
+
+
+.relat ul .litwo span {
+
+    font-size: 1rem;
+
+}
+
+
+.relat ul .lithree {
+
+    top: 80%;
+    left: 15%;
+    font-family: 'gl';
+}
+
+.relat ul .lithree span {
+
+    display: block;
+    height: 2px;
+    width: 110px;
+    background: #3cfccd;
+    margin-top: 8px;
+
+}
+
+.scafati .relat ul .lithree span {
+
+    background: #ff006c;
+
+}
+
+
+.lunette .relat {
+
+    background: url('../img/lunette.png');
+    background-size: cover;
+
+}
+
+.numberMen {
+
+    background: black;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+.blue {
+
+    background: #3cfccd;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+.numberMen p {
+
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: 'gm';
+    margin-top: 65%;
+    height: 50px;
+    font-size: 2.2rem;
+
+}
+
+.numberWomen {
+
+    background: black;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+.pink {
+
+    background: black;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    background: #ff006c;
+}
+
+.numberWomen p {
+
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: 'gm';
+    margin-top: 65%;
+    height: 50px;
+    font-size: 2.2rem;
+
+}
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*--------------------- MEDIA QUERY  -----------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+@media screen and (min-width: 940px) {
+
+.vilage{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 50%;
+    background: url(../img/VillageMobile.png);
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+
+.menuBot{
+    
+    background: #222222;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    
+}
+
+.menuBot ul {
+    
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    
+}
+
+.menuBot ul li {
+    
+   
+    margin-left: 80px;
+    font-family: 'gm';
+    font-size: 1.5rem;
+    height: 10px;
+    
+}
+
+.menuBot ul li:hover {
+    
+  color: #3cfccd;
+    
+}
+
+.menuBot .insta{
+    
+    
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    
+}
+
+
+    .scandini {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 50%;
+
+    }
+
+    .lunette .relat {
+
+        background: url('../img/lunette.png');
+        background-size: cover;
+
+    }
+
+    .scandini .relat {
+
+        background: url('../img/ScandicciBig.png');
+        background-size: cover;
+
+    }
+
+    .scafati {
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+
+    }
+
+    .scafati .relat {
+
+
+        background: url('../img/ScafatiBig.png');
+        background-size: cover;
+
+    }
+
+
+    .relat ul li {
+
+
+        font-size: 1.1rem;
+
+    }
+
+
+
+    .relat ul .litwo span {
+
+        font-size: 3.5rem;
+
+    }
+
+
+    .relat ul .lithree {
+
+        top: 80%;
+        left: 15%;
+        font-family: 'gl';
+    }
+
+    .relat ul .lithree span {
+
+        display: block;
+        height: 2px;
+        width: 153px;
+        background: #3cfccd;
+        margin-top: 8px;
+
+    }
+
+    .scafati .relat ul .lithree span {
+
+        background: #ff006c;
+
+    }
+
+
+    .lunette .relat {
+
+        background: url('../img/lunetteBig.png');
+        background-size: cover;
+
+    }
+
+    .numberMen {
+
+        background: black;
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+    }
+
+    .blue {
+
+        width: 140px;
+        height: 140px;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+    }
+
+    .numberMen p {
+
+        font-size: 3.2rem;
+
+    }
+
+    .numberWomen {
+
+
+        width: 120px;
+        height: 120px;
+
+        top: 59%;
+        left: 50%;
+    }
+
+    .pink {
+
+
+        width: 140px;
+        height: 140px;
+
+        top: 59%;
+        left: 50%;
+
+    }
+
+    .numberWomen p {
+
+
+        margin-top: 65%;
+        height: 50px;
+        font-size: 3.2rem;
+
+    }
+
+
+
+}
