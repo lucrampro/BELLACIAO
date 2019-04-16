@@ -285,6 +285,42 @@ $('document').ready(function () {
 
 
     });
+    
+    
+//    -------------
+//    -------------
+//    -------------
+//    -------------
+//    -------------
+//    -------------
 
+    
+    $('.close').click(function (){
+            
+            
+            TweenMax.to('.contact', 0.5,{
+                    
+                    width: 0
+                    
+                });
+       
+        
+        
+        
+    });
+    
+    $('.contactOpen').click(function (){
+            
+            
+            TweenMax.to('.contact', 0.5,{
+                    
+                    width: '100%'
+                    
+                });
+       
+        
+        
+        
+    });
 
 });

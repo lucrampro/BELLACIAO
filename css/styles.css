@@ -103,6 +103,12 @@ a{
     
     text-decoration: none;
     color: white;
+    
+}
+
+p{
+    
+    line-height: 1.2rem;
 }
 
 a::hover{
@@ -132,7 +138,7 @@ a::hover{
     width: 100%;
     height: 100vh;
     background: black;
-    z-index: 98;
+    z-index: 97;
     overflow: hidden;
 }
 
@@ -208,12 +214,88 @@ a::hover{
     width: 100%;
 }
 
+
+.contact{
+    
+    
+    position: absolute;
+    background: white;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    z-index: 99;
+    color: #222222;
+    overflow: hidden;
+    
+}
+
 .englobe {
 
 
     height: 100%;
     width: 100%;
     position: relative;
+}
+
+.contact .close{
+    
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    height: 50px;
+    width: 50px;
+    
+    
+    
+}
+
+.traiClose1{
+    width: 20px;
+    height: 3px;
+    background: #222222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    
+
+    
+}
+
+
+.traiClose2{
+    width: 20px;
+    height: 3px;
+    background: #222222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    
+
+    
+}
+
+
+.form{
+    
+    width: 100%;
+    height: 70vh;
+    border: solid 1px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.form p{
+    
+    color: #222222;
+    font-family: 'gm';
+
+    margin-top: 50px;
 }
 
 
@@ -566,9 +648,12 @@ h1 span {
 
 .menuBot ul {
     
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 500px;
     padding-top: 40%;
+    position: absolute;
+    left: 0;
+    top: 10%;
     
 }
 
@@ -579,6 +664,7 @@ h1 span {
     font-family: 'gm';
     font-size: 1.5rem;
     height: 10px;
+
     
 }
 
