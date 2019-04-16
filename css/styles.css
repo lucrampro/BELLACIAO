@@ -58,6 +58,7 @@ ol {
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    line-height: 1rem;
 }
 
 
@@ -124,7 +125,7 @@ a::hover{
     width: 40px;
     background: none;
     border: solid 3px white;
-    z-index: 99;
+    z-index: 3;
     top: 20px;
     right: 20px;
 
@@ -135,10 +136,10 @@ a::hover{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100vh;
     background: black;
-    z-index: 97;
+    z-index: 2;
     overflow: hidden;
 }
 
@@ -189,6 +190,8 @@ a::hover{
     margin-left: 80px;
     font-family: 'gm';
     font-size: 1.3rem;
+    height: 10px;
+    width: 500px;
     
 }
 
@@ -203,7 +206,7 @@ a::hover{
     
     height: 30px;
     width: 30px;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     
@@ -222,8 +225,8 @@ a::hover{
     background: white;
     bottom: 0;
     left: 0;
-    height: 100vh;
-    width: 0;
+    height: 0;
+    width: 100%;
     z-index: 99;
     color: #222222;
     overflow: hidden;
@@ -280,13 +283,13 @@ a::hover{
 
 .form{
     
-    width: 100%;
+  
     height: 70vh;
     border: solid 1px black;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50%;
+    width: 100%;
     transform: translate(-50%,-50%);
 }
 
@@ -296,6 +299,7 @@ a::hover{
     font-family: 'gm';
 
     margin-top: 50px;
+    margin-left: 20px;
 }
 
 
@@ -573,7 +577,7 @@ h1 span {
     margin-top: 65%;
     height: 50px;
     font-size: 2.2rem;
-
+    line-height: 0;
 }
 
 .numberWomen {
@@ -610,8 +614,39 @@ h1 span {
     margin-top: 65%;
     height: 50px;
     font-size: 2.2rem;
+    line-height: 0;
 
 }
+
+
+
+/*---- ----- ||||| FORMULAIRE ||||| ----- ----*/
+
+form{
+    
+    height: 400px;
+    width: 350px;
+    border: solid 1px red;
+    margin-left: 20px;
+    
+}
+
+form label{
+    
+    height: 10px;
+    width: 50px;
+    border: solid 2px red;
+}
+
+
+
+/*
+
+$(".relat").css('background','url(../img/lunette.png)'); 
+*/
+
+
+
 
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/

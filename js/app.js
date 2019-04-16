@@ -194,133 +194,170 @@ $('document').ready(function () {
 
 
             TweenMax.to('.menu', 0.5, {
-                
+
                 width: '100%'
             });
-            
-            
-            TweenMax.to('.trai2', 0.5,{
-                
-                css:{
-                    
+
+
+            TweenMax.to('.trai2', 0.5, {
+
+                css: {
+
                     opacity: 0
                 }
-                
-                
-                
+
+
+
             });
-            
-//            
-            TweenMax.to('.trai1', 0.5,{
-                
-                css:{
-                    
-    transform: 'translate(-50%,-50%) rotate(45deg)',
+
+            //            
+            TweenMax.to('.trai1', 0.5, {
+
+                css: {
+
+                    transform: 'translate(-50%,-50%) rotate(45deg)',
                     top: '50%'
-                    
+
                 }
-                
-                           
+
+
             });
-            
-            TweenMax.to('.trai3', 0.5,{
-                
-                css:{
-                    
-    transform: 'translate(-50%,-50%) rotate(-45deg)',
+
+            TweenMax.to('.trai3', 0.5, {
+
+                css: {
+
+                    transform: 'translate(-50%,-50%) rotate(-45deg)',
                     top: '50%'
-                    
+
                 }
-                                
+
             });
-            
-
-        }
 
 
-        else{
-            
-            
+        } else {
+
+
             TweenMax.to('.menu', 0.5, {
-                
+
                 width: 0
             });
-            
-              TweenMax.to('.trai2', 0.5,{
-                
-                css:{
-                    
+
+            TweenMax.to('.trai2', 0.5, {
+
+                css: {
+
                     opacity: 1
                 }
-                
+
             });
-            
-            
- TweenMax.to('.trai1', 0.5,{
-                
-                css:{
-                    
-    transform: 'translate(-50%,-50%) rotate(0deg)',
+
+
+            TweenMax.to('.trai1', 0.5, {
+
+                css: {
+
+                    transform: 'translate(-50%,-50%) rotate(0deg)',
                     top: '35%'
-                    
+
                 }
-                
-                           
+
+
             });
-            
-            TweenMax.to('.trai3', 0.5,{
-                
-                css:{
-                    
-    transform: 'translate(-50%,-50%) rotate(0deg)',
+
+            TweenMax.to('.trai3', 0.5, {
+
+                css: {
+
+                    transform: 'translate(-50%,-50%) rotate(0deg)',
                     top: '65%'
-                    
+
                 }
-                                
+
             });
-            
-            
-            
+
+
+
         }
 
 
     });
-    
-    
-//    -------------
-//    -------------
-//    -------------
-//    -------------
-//    -------------
-//    -------------
 
-    
-    $('.close').click(function (){
-            
-            
-            TweenMax.to('.contact', 0.5,{
-                    
-                    width: 0
-                    
-                });
-       
-        
-        
-        
+
+    //    -------------
+    //    -------------
+    //    -------------
+    //    -------------
+    //    -------------
+    //    -------------
+
+
+    $('.close').click(function () {
+
+
+        TweenMax.to('.contact', 0.5, {
+
+            height: 0
+
+        });
+
+        TweenMax.to('.menuBurger', 0, {
+
+            css: {
+
+
+                display: 'inherit'
+            }
+
+        });
+
+
+
+
+
     });
-    
-    $('.contactOpen').click(function (){
-            
-            
-            TweenMax.to('.contact', 0.5,{
-                    
-                    width: '100%'
-                    
-                });
-       
-        
-        
-        
+
+    $('.contactOpen').click(function () {
+
+
+
+
+        TweenMax.to('.contact', 0.5, {
+
+            height: '100%'
+
+        });
+
+
+        TweenMax.to('.menuBurger', 0, {
+
+            css: {
+
+
+                display: 'none'
+            }
+
+        });
+
+
+
+
+
     });
+
+
+    ////////// SCROLL //////////
+
+
+    $(document).on('scroll', function () {
+
+        $(".relat").css('background','url(../img/lunette.png)');
+        $('.relat').css('background-size', 'cover');
+
+        $(".relat").css("color", "black");
+
+    });
+
+
 
 });
