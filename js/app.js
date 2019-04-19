@@ -237,8 +237,8 @@ $('document').ready(function () {
 
 
         } else {
-            
-            
+
+
             TweenMax.to('.cacheH', 0.5, {
 
                 top: '30%',
@@ -268,8 +268,8 @@ $('document').ready(function () {
 
             });
 
-            
-            
+
+
             $('.quantity').addClass('scale');
 
 
@@ -416,6 +416,14 @@ $('document').ready(function () {
             }
 
         });
+        
+        if(!$('.lunette').hasClass('lunetteO')){
+            
+            
+            $('.cacheH').removeClass('black');
+            
+            
+        }
 
 
 
@@ -425,6 +433,15 @@ $('document').ready(function () {
 
     $('.contactOpen').click(function () {
 
+        if (!$('.cacheH').hasClass('black')) {
+
+
+            $('.cacheH').addClass('black');
+
+
+        }
+
+        
 
 
 
@@ -536,6 +553,8 @@ $('document').ready(function () {
             $('.lunette').removeClass('lunetteO');
             $('li').removeClass('black');
             $('.cacheH').removeClass('black');
+
+
 
 
             TweenMax.to('.first', 1.5, {

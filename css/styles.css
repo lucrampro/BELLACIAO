@@ -64,7 +64,7 @@ ol {
 
 
 html {
-    /*    overflow-y: hidden;*/
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -443,6 +443,7 @@ h1 span {
 
 }
 
+
 .lunette .relat {
 
     background: url('../img/lunette.png');
@@ -741,23 +742,164 @@ input {
 
 }
 
-.send{
-    
-    font-size: 1rem!important;
-    margin-top: 50px!important;
-    
-    
+.send {
+
+    font-size: 1rem !important;
+    margin-top: 50px !important;
+
+
 }
 
 
+.out {
+
+
+    background: #222;
+    width: 100%;
+    position: relative;
+    height: 40%;
+    top: 100%;
+    padding-top: 20px;
+
+}
+
+.out p {
+
+
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem !important;
+    font-family: 'gm';
+    margin-bottom: 10px;
+
+
+}
+
+.out p .colorb {
+
+
+    color: #3cfccd;
+
+}
+
+
+.out p .colorr {
+
+
+    color: #ff006c;
+    margin-bottom: 20px;
+
+}
+
+.out input {
+
+    width: 300px;
+    margin-top: 100px;
+    display: block;
+    margin: auto;
+    background: #181818;
+
+}
+
+.out .separat {
+
+
+    background: #fefefe;
+    height: 2px;
+    width: 10px;
+
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.out .follow {
+
+    font-family: 'gl';
+    margin-top: 30px;
+
+}
+
+.out .imgInsta {
+
+
+    display: block;
+    width: 30px;
+    margin: auto;
+
+    margin-top: 30px;
+}
 
 /*
 
 $(".relat").css('background','url(../img/lunette.png)'); 
 */
 
+.outAll {
 
 
+    top: 25%;
+    height: 60%;
+    padding-top: 50px;
+    display: none;
+   transition: 1s; 
+
+
+}
+
+.bellaOUT h1 {
+
+    height: auto !mportant;
+
+}
+
+.bellaOUT h1 span {
+
+    transform: translate(0, 0) !important;
+    opacity: 1 !important;
+    width: auto !important;
+    margin-bottom: 20px;
+}
+
+
+.outAll .cacheP {
+
+    position: inherit !important;
+    opacity: 1;
+    transform: translate(0, 0);
+    top: 0;
+    left: 0;
+    height: auto;
+
+}
+
+.outAll p {
+    font-size: 1.3rem !important;
+}
+
+.outAll .cacheP p {
+
+    transform: translate(0, 0) !important;
+    opacity: 1 !important;
+    padding-top: 1px !important;
+    letter-spacing: 1px !important;
+    font-family: 'kl' !important;
+    font-size: 1rem !important;
+    margin-bottom: 20px !important;
+
+
+}
+
+.outAll .follow{
+    
+    font-size: 0.8rem!important;
+}
+
+.uppercase {
+
+
+    text-transform: uppercase;
+}
 
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
@@ -998,15 +1140,49 @@ $(".relat").css('background','url(../img/lunette.png)');
         font-size: 3.2rem;
 
     }
-    
-    
-    
-    .contact{
-        
+
+
+
+    .contact {
+
         width: 50%;
     }
 
 
+
+    .outAll {
+
+
+        top: 0;
+        height: 100vh;
+        padding-top: 250px;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+    }
+    
+ 
+
+
+
+.outAll .cacheP {
+
+    position: inherit !important;
+    opacity: 1;
+    transform: translate(0, 0);
+    top: 0;
+    left: 0;
+    height: auto;
+    margin-bottom: 50px    ;
+
+}
+
+    .outAll input{
+        
+        margin-top: 50px;
+    }
 
 }
 
