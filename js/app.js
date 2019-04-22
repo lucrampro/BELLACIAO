@@ -2,75 +2,80 @@ var lastScrollTop = 0;
 var menQuantity = 30;
 var womenQuantity = 75;
 
-$(document).on('scroll', function () {
+var mobile =
 
-    console.log('ok');
-    var st = $(this).scrollTop();
+    $(document).on('scroll', function () {
 
-    if ($('.cacheBlack').css('height') === '0px') {
+        console.log('ok');
+        var st = $(this).scrollTop();
 
-        if (st > lastScrollTop) {
-            if (!$('.product').hasClass('lunetteO')) {
+        if ($('.cacheBlack').css('height') === '0px') {
 
-                $('li').addClass('black');
-                $('.cacheH').addClass('black');
-                $('.menuBurger').addClass('bc');
-                $('.trai1').addClass('bb');
-                $('.trai2').addClass('bb');
-                $('.trai3').addClass('bb');
+            if (st > lastScrollTop) {
+                if (!$('.product').hasClass('lunetteO')) {
 
-                TweenMax.to('.men .product', 1.5, {
-                    top: 0,
-                    ease: Expo.easeOut
-                });
-                TweenMax.to('.women .product', 1.5, {
-                    top: 0,
-                    ease: Expo.easeOut,
-                    delay: 0.1
-                });
+                    $('li').addClass('black');
+                    $('.cacheH').addClass('black');
+                    $('.menuBurger').addClass('bc');
+                    $('.trai1').addClass('bb');
+                    $('.trai2').addClass('bb');
+                    $('.trai3').addClass('bb');
 
-                setTimeout(function () {
-                    $('.product').addClass('lunetteO');
-                }, 1600);
+                    TweenMax.to('.men .product', 1.5, {
+                        top: 0,
+                        ease: Expo.easeOut
+                    });
+                    TweenMax.to('.women .product', 1.5, {
+                        top: 0,
+                        ease: Expo.easeOut,
+                        delay: 0.1
+                    });
 
-            }
-        } else {
+                    setTimeout(function () {
+                        $('.product').addClass('lunetteO');
+                    }, 1600);
 
-            if ($('.product').hasClass('lunetteO')) {
+                }
+            } else {
 
-                $('li').removeClass('black');
-                $('.cacheH').removeClass('black');
-                $('.menuBurger').removeClass('bc');
-                $('.trai1').removeClass('bb');
-                $('.trai2').removeClass('bb');
-                $('.trai3').removeClass('bb');
+                if ($('.product').hasClass('lunetteO')) {
 
-                TweenMax.to('.men .product', 1.5, {
-                    top: '100%',
-                    ease: Expo.easeOut
-                });
-                TweenMax.to('.women .product', 1.5, {
-                    top: '100%',
-                    ease: Expo.easeOut,
-                    delay: 0.1
-                });
+                    $('li').removeClass('black');
+                    $('.cacheH').removeClass('black');
+                    $('.menuBurger').removeClass('bc');
+                    $('.trai1').removeClass('bb');
+                    $('.trai2').removeClass('bb');
+                    $('.trai3').removeClass('bb');
 
-                setTimeout(function () {
-                    $('.product').removeClass('lunetteO');
-                }, 1600);
+                    TweenMax.to('.men .product', 1.5, {
+                        top: '100%',
+                        ease: Expo.easeOut
+                    });
+                    TweenMax.to('.women .product', 1.5, {
+                        top: '100%',
+                        ease: Expo.easeOut,
+                        delay: 0.1
+                    });
+
+                    setTimeout(function () {
+                        $('.product').removeClass('lunetteO');
+                    }, 1600);
+                }
             }
         }
-    }
 
-    lastScrollTop = st;
+        lastScrollTop = st;
 
-});
+    });
+
+////////////////
+///////////
 
 
 $('.menuBurger').click(function () {
 
 
-    if ($('.cacheH').hasClass('bc')) {
+    if ($('.cacheH').hasClass('black')) {
 
 
         $('.menuBurger').removeClass('bc');
@@ -78,6 +83,8 @@ $('.menuBurger').click(function () {
         $('.trai1').removeClass('bb');
         $('.trai2').removeClass('bb');
         $('.trai3').removeClass('bb');
+        $('.cacheH').removeClass('black');
+
     }
 
 
@@ -271,17 +278,86 @@ $('document').ready(function () {
         if ($('.quantity').hasClass('scale')) {
             $('.quantity').removeClass('scale');
             TweenMax.to('.cacheH', 0.5, {
-                top: '5%',
-                left: '10%',
+                top: '7%',
+                left: '5%',
                 x: '-50%',
                 y: '-50%',
             });
+
+
+            if ($(window).width() < 940) {
+
+                TweenMax.to('.numberMen', 0.5, {
+
+                    top: '50%',
+                    left: '39%'
+
+                });
+
+                TweenMax.to('.numberWomen', 0.5, {
+
+                    top: '50%',
+                    left: '60%'
+
+                });
+            } else {
+
+                TweenMax.to('.numberMen', 0.5, {
+
+                    top: '38%',
+                    left: '50%'
+
+                });
+
+                TweenMax.to('.numberWomen', 0.5, {
+
+                    top: '59%',
+                    left: '50%'
+
+                });
+            }
 
             TweenMax.to('.day', 0.1, {
                 y: '-20px',
                 opacity: 0
             });
+
+
+
+            TweenMax.to('.parrow', 0.5, {
+
+                css: {
+                    opacity: 0
+                }
+
+            });
+            TweenMax.to('.qra', 0.5, {
+
+                css: {
+                    opacity: 0
+                }
+
+            });
+
         } else {
+
+            TweenMax.to('.numberMen', 0.5, {
+
+                top: '60%',
+                left: '20%'
+
+            });
+
+            TweenMax.to('.numberWomen', 0.5, {
+
+                top: '60%',
+                left: '80%'
+
+            });
+
+
+
+
             TweenMax.to('.cacheH', 0.5, {
                 top: '30%',
                 left: '50%',
@@ -301,6 +377,21 @@ $('document').ready(function () {
                 }
             });
             $('.quantity').addClass('scale');
+
+            TweenMax.to('.parrow', 0.5, {
+
+                css: {
+                    opacity: 1
+                }
+
+            });
+            TweenMax.to('.qra', 0.5, {
+
+                css: {
+                    opacity: 1
+                }
+
+            });
         }
     });
 
