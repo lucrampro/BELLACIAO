@@ -1,13 +1,13 @@
 @-ms-viewport {
-    width: device-width;
+	width: device-width;
 }
 
 @-o-viewport {
-    width: device-width;
+	width: device-width;
 }
 
 @viewport {
-    width: device-width;
+	width: device-width;
 }
 
 html,
@@ -34,12 +34,12 @@ footer,
 header,
 nav,
 section {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 article,
@@ -48,787 +48,636 @@ footer,
 header,
 nav,
 section {
-    display: block;
+	display: block;
 }
 
 ol {
-    list-style: none;
+	list-style: none;
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    line-height: 1rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
-
-
 
 html {
-    overflow-y: hidden;
-    overflow-x: hidden;
+	/* overflow-y: hidden; */
+	overflow-x: hidden;
 }
 
 
 @font-face {
-    font-family: 'gm';
-    src: url("../fonts/GothamMedium.ttf");
-    font-weight: normal;
+    font-family: "gl";
+    src: url("../fonts/Gotham-Light.woff2") format("woff2"), url("../fonts/Gotham-Light.woff") format("woff");
 }
-
-
 @font-face {
-    font-family: 'gl';
-    src: url("../fonts/GothamLight.ttf");
-    font-weight: normal;
+    font-family: "gm";
+    src: url("../fonts/gotham-medium.woff2") format("woff2"), url("../fonts/gotham-medium.woff") format("woff");
 }
-
-
-
-
 @font-face {
-    font-family: 'kl';
-    src: url("../fonts/Karma-Light.ttf");
-    font-weight: normal;
+	font-family: 'kl';
+	src: url("../fonts/Karma-Light.ttf");
+	font-weight: normal;
 }
+
 
 /*___ DEBUT CSS ___*/
 
-
 body {
+	background: none;
+	color: #ffffff;
+	font-family: 'gl';
+	position: relative;
+}
 
-    background: none;
-    color: #ffffff;
-    font-family: 'gl';
-    position: relative;
+.bc{
+	border-color: #222!important;
+	transition: 1s;
+}
 
-
+.bb{
+	background: #222!important;
 }
 
 a {
-
-    text-decoration: none;
-    color: white;
-
+	text-decoration: none;
+	color: white;
 }
 
 p {
-
-    line-height: 1.2rem;
+	line-height: 1.2rem;
 }
 
 a::hover {
-
-
-    color: #3cfccd;
+	color: #3cfccd;
 }
 
+li {
+    list-style-type: none;
+}
+
+
+.main {
+	width: 100vw;
+	height: 1000vh;
+}
+
+/* .scrollHack {
+	position: fixed;
+	width: 101vw;
+    height: 100vh;
+    overflow-y: auto;
+} */
+
 .menuBurger {
-
-    position: fixed;
-    height: 40px;
-    width: 40px;
-    background: none;
-    border: solid 3px white;
-    z-index: 3;
-    top: 20px;
-    right: 20px;
-
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	background: none;
+	border: solid 3px white;
+	z-index: 3;
+	top: 20px;
+	right: 20px;
 }
 
 .menu {
-
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    background: black;
-    z-index: 2;
-    overflow: hidden;
-    transition: 1s;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100vh;
+	background: black;
+	z-index: 2;
+	overflow: hidden;
+	transition: 1s;
 }
 
 .open {
-
-
-    left: 0;
-    transition: 1s;
+	left: 0;
+	transition: 1s;
 }
 
-.vilage {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 60vh;
-    width: 100%;
-    background: url(../img/VillageMobile.png);
-    background-size: cover;
-    overflow: hidden;
-
+.about {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60vh;
+	width: 100%;
+	background: url(../img/VillageMobile.png);
+	background-size: cover;
+	overflow: hidden;
 }
 
-.vilage p {
-
-    margin-top: 20%;
-    height: 500px;
-    width: 200px;
-
-
+.about p {
+	margin-top: 20%;
+	height: 500px;
+	width: 200px;
 }
 
 .menuBot {
-
-    background: #222222;
-    height: 40vh;
-    width: 100%;
-    top: 60%;
-    left: 0;
-    position: absolute;
-
+	background: #222222;
+	height: 40vh;
+	width: 100%;
+	top: 60%;
+	left: 0;
+	position: absolute;
 }
 
 .menuBot ul {
-
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
-
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
 }
 
 .menuBot ul li {
-
-    margin-top: 45px;
-    margin-left: 80px;
-    font-family: 'gm';
-    font-size: 1.3rem;
-    height: 10px;
-    width: 500px;
-
+	margin-top: 45px;
+	margin-left: 80px;
+	font-family: 'gm';
+	font-size: 1.3rem;
+	height: 10px;
+	width: 500px;
 }
 
 .menuBot ul li:hover {
-
-    color: #3cfccd;
-
+	color: #3cfccd;
 }
 
 .menuBot .insta {
-
-
-    height: 30px;
-    width: 30px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
 }
 
 .menuBot .insta img {
-
-    width: 100%;
+	width: 100%;
 }
 
-
 .contact {
-
-
-    position: absolute;
-    background: white;
-    bottom: 0;
-    left: 0;
-    height: 0;
-    width: 100%;
-    z-index: 99;
-    color: #222222;
-    overflow: hidden;
-
+	position: absolute;
+	background: white;
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	z-index: 99;
+	color: #222222;
+	overflow: hidden;
 }
 
 .englobe {
-
-
-    height: 100%;
-    width: 100%;
-    position: relative;
+	height: 100%;
+	width: 100%;
+	position: relative;
 }
 
 .contact .close {
-
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    height: 50px;
-    width: 50px;
-
-
-
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	height: 50px;
+	width: 50px;
 }
 
 .traiClose1 {
-    width: 20px;
-    height: 3px;
-    background: #222222;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-
-
-
+	width: 20px;
+	height: 3px;
+	background: #222222;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
 }
-
 
 .traiClose2 {
-    width: 20px;
-    height: 3px;
-    background: #222222;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-
-
-
+	width: 20px;
+	height: 3px;
+	background: #222222;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
 }
-
-
-
-
-
-
-
-
-
-
 
 .trai1 {
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 30%;
-    width: 20px;
-    height: 3px;
-    background: white;
-    transition: 0.1;
-
-
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 30%;
+	width: 20px;
+	height: 3px;
+	background: white;
+	transition: 0.1;
 }
-
 
 .trai2 {
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    width: 20px;
-    height: 3px;
-    background: white;
-    transition: 0.1;
-
-
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 20px;
+	height: 3px;
+	background: white;
+	transition: 0.1;
 }
 
-
 .trai3 {
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 70%;
-    width: 20px;
-    height: 3px;
-    background: white;
-    transition: 0.1;
-
-
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 70%;
+	width: 20px;
+	height: 3px;
+	background: white;
+	transition: 0.1;
 }
 
 .cacheBlack {
-
-    position: fixed;
-    background: #222;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 99;
-
+	position: fixed;
+	background: #222;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 99;
 }
 
 h1 {
-    font-size: 2.5rem;
-    text-align: center;
-
-
-}
-
-.cacheH {
-    position: fixed;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    width: 500px;
-    height: 50px;
-    padding-top: 50px;
-    z-index: 99;
-
-
-
+	font-size: 3rem;
+	text-align: center;
 }
 
 h1 span {
-    display: inline-block;
-    transform: translateY(55px);
-    opacity: 0;
+	display: inline-block;
+	transform: translateY(55px);
+	opacity: 0;
+}
 
+.cacheH {
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	width: 500px;
+	height: 70px;
+	padding-top: 15px;
+	z-index: 99;
 }
 
 .gm {
-
-    font-family: 'gm';
-
+	font-family: 'gm';
 }
 
 .gl {
-
-    font-family: 'gl';
+	font-family: 'gl';
 }
 
 .day {
-
-    color: #eaeaea;
-    font-size: 0.5rem;
-    word-spacing: 5px;
-    letter-spacing: 5px;
-    font-family: 'kl';
-    text-transform: uppercase;
-    transform: translateY(20px);
-    opacity: 0;
-    text-align: center;
-
-
+	color: #eaeaea;
+	font-size: 0.5rem;
+	word-spacing: 5px;
+	letter-spacing: 5px;
+	font-family: 'kl';
+	text-transform: uppercase;
+	transform: translateY(20px);
+	opacity: 0;
+	text-align: center;
 }
 
 .cacheP {
-    position: fixed;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    width: 100%;
-
-
+	position: fixed;
+	top: 52%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	width: 100%;
 }
-
 
 .presentation {
-
-    height: 100vh;
-    width: 100wh;
-    position: relative;
-
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
 }
 
-.scandini {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50vh;
-    width: 100%;
-
+.men {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	height: 50vh;
+	width: 100%;
 }
 
-
-.lunette .relat {
-
-    background: url('../img/lunette.png');
-    background-size: cover;
-
+.men .relat {
+	background: url('../img/Scandicci.jpg');
+	background-size: cover;
 }
 
-.scandini .relat {
-
-    background: url('../img/Scandicci.jpg');
-    background-size: cover;
-
+.women {
+	position: absolute;
+	overflow: hidden;
+	bottom: 0;
+	right: 0;
+	height: 50vh;
+	width: 100%;
 }
 
-.scafati {
-
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 50vh;
-    width: 100%;
-
-}
-
-.scafati .relat {
-
-
-    background: url('../img/Scafati.png');
-    background-size: cover;
-
+.women .relat {
+	background: url('../img/Scafati.png');
+	background-size: cover;
 }
 
 .relat {
-
-    position: relative;
-    height: 100%;
-    width: 100%;
+	position: relative;
+	height: 100%;
+	width: 100%;
 }
-
 
 .relat ul li {
-
-    color: #ffffff;
-    width: 50%;
-    opacity: 1;
-    font-family: 'gm';
-    position: absolute;
-    font-size: 0.8rem;
-
+	color: #ffffff;
+	width: 50%;
+	opacity: 1;
+	font-family: 'gm';
+	position: absolute;
+	font-size: 0.8rem;
 }
 
-
-.lunette .relat ul li {
-
-    color: black;
-
-
+.product {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 100%;
 }
 
+.product .relat {
+	background: #eeeeee;
+	background-size: cover;
+	padding-top: 70px;
+}
+
+.product .relat ul li {
+	color: black;
+}
+.carroussel * {
+	outline: none;
+}
+.carroussel div img {
+	width: 100%;
+	margin: 0 auto 0;
+	opacity: .2;
+	transition: .2s ease-in-out;
+}
+.carroussel div img:hover {
+	cursor: grab;
+}
+.carroussel div img:active {
+	cursor: grabbing;
+}
+.carroussel .slick-center img {
+	width: 80%;
+	opacity: 1;
+	margin: 10px auto 0;
+}
 
 .relat ul .lione {
-
-    top: 65%;
-    left: 15%;
-
-
+	top: 57%;
+	left: 15%;
 }
-
 
 .relat ul .litwo {
-
-    top: 70%;
-    left: 15%;
-
-
+	top: 62%;
+	left: 15%;
 }
-
 
 .relat ul .litwo span {
-
-    font-size: 1rem;
-
+	font-size: 2rem;
 }
-
 
 .relat ul .lithree {
-
-    top: 80%;
-    left: 15%;
-    font-family: 'gl';
+	top: 75%;
+	left: 15%;
+	font-family: 'gl';
 }
 
-
 .relat ul .lithree:hover {
-
-    cursor: grab;
+	cursor: grab;
 }
 
 .relat ul .lithree span {
-
-    display: block;
-    height: 2px;
-    width: 110px;
-    background: #3cfccd;
-    margin-top: 8px;
-
+	display: block;
+	height: 2px;
+	width: 110px;
+	background: #3cfccd;
+	margin-top: 4px;
 }
 
-.scafati .relat ul .lithree span {
-
-    background: #ff006c;
-
-}
-
-.lunette {
-
-    top: 100%;
-}
-
-.lunetteO {}
-
-
-.lunette .relat {
-
-    background: url('../img/lunette.png');
-    background-size: cover;
-
-
+.women .relat ul .lithree span {
+	background: #ff006c;
 }
 
 .quantity {
-
-
-    background: #222;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    transition: 1s;
-
-
+	background: #222;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	transition: 1s;
+}
+.hiddenQte {
+	display: none;
 }
 
-.scale {
-
-    transform: translate(-50%, -50%) scale(1);
-    transition: 1s;
-
+.circular-chart {
+    left: 0;
+    width: 110%;
+    margin-left: -5%;
+    margin-top: -5%;
+    background: none;
+}
+.circular-chart .circle {
+	fill: black;
+	stroke-width: 2;
+	stroke-linecap: round;
 }
 
 .number {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 96px;
-    width: 400px;
-
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 96px;
+	width: 400px;
+	z-index: 2;
 }
+.numberWomen .circle { 
+	stroke: #ff006c;
+	transition: 2s ease-in-out;
+}
+.numberMen .circle { 
+	stroke: #3cfccd; 
+	transition: 2s ease-in-out;
+}
+
+.scale {
+	transform: translate(-50%, -50%) scale(1);
+	transition: 1s;
+}
+
 
 .numberMen {
-
-    background: black;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 50%;
-    left: 37%;
-    transform: translate(-50%, -50%);
-    border-radius: 100%;
-
-    cursor: pointer;
+	background: black;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	left: 39%;
+	transform: translate(-50%, -50%);
+	border-radius: 100%;
+	cursor: pointer;
 }
-
-.blue {
-
-    background: #3cfccd;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    top: 50%;
-    left: 37%;
-    transform: translate(-50%, -50%);
-    border-radius: 100%;
-}
-
 .numberMen p {
-
-    color: white;
-    width: 100%;
-    text-align: center;
-    font-family: 'gm';
-    margin-top: 65%;
-    height: 50px;
-    font-size: 2.2rem;
-    line-height: 0;
+	position: absolute;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-family: 'gm';
+	margin-top: 50%;
+	height: 50px;
+	font-size: 2.2rem;
+	line-height: 0;
 }
 
 .numberWomen {
-
-    background: black;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 50%;
-    left: 61%;
-    transform: translate(-50%, -50%);
-    border-radius: 100%;
-
-    cursor: pointer;
+	background: black;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	left: 61%;
+	transform: translate(-50%, -50%);
+	border-radius: 100%;
+	cursor: pointer;
 }
-
-.pink {
-
-    background: black;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    top: 50%;
-    left: 61%;
-    transform: translate(-50%, -50%);
-    border-radius: 100%;
-    background: #ff006c;
-}
-
 .numberWomen p {
-
-    color: white;
-    width: 100%;
-    text-align: center;
-    font-family: 'gm';
-    margin-top: 65%;
-    height: 50px;
-    font-size: 2.2rem;
-    line-height: 0;
-
+	position: absolute;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-family: 'gm';
+	margin-top: 50%;
+	height: 50px;
+	font-size: 2.2rem;
+	line-height: 0;
 }
-
 
 
 /*---- ----- ||||| FORMULAIRE ||||| ----- ----*/
 
-
-
-
 .form {
-
-
-    height: 60vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
+	height: 60vh;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
 }
 
 .form p {
-
-    color: #222222;
-    font-family: 'gm';
-    font-size: 0.8rem;
-    margin-top: 50px;
-    width: 300px;
-    margin: auto;
-    display: block;
+	color: #222222;
+	font-family: 'gm';
+	font-size: 0.8rem;
+	margin-top: 50px;
+	width: 300px;
+	margin: auto;
+	display: block;
 }
 
-
 form {
-
-    height: 400px;
-    width: 300px;
-    margin: auto;
-    position: relative;
-    display: block;
-
+	height: 400px;
+	width: 300px;
+	margin: auto;
+	position: relative;
+	display: block;
 }
 
 input {
-
-    height: 40px;
-    width: 100%;
-    border-radius: 10px;
-    background: #e5e5e5;
-    opacity: 0.8;
-    margin-top: 10px;
+	height: 40px;
+	width: 100%;
+	border-radius: 10px;
+	background: #e5e5e5;
+	opacity: 0.8;
+	margin-top: 10px;
 }
 
 #ydemande {
-
-    height: 100px;
-
+	height: 100px;
 }
 
 .send {
-
-    font-size: 1rem !important;
-    margin-top: 50px !important;
-
-
+	font-size: 1rem !important;
+	margin-top: 50px !important;
 }
 
-
 .out {
-
-
-    background: #222;
-    width: 100%;
-    position: relative;
-    height: 40%;
-    top: 100%;
-    padding-top: 20px;
-
+	display: none;
+	background: #222;
+	width: 100%;
+	position: relative;
+	height: 40%;
+	top: 100%;
+	padding-top: 20px;
 }
 
 .out p {
-
-
-    width: 100%;
-    text-align: center;
-    font-size: 0.8rem !important;
-    font-family: 'gm';
-    margin-bottom: 10px;
-
-
+	width: 100%;
+	text-align: center;
+	font-size: 0.8rem !important;
+	font-family: 'gm';
+	margin-bottom: 10px;
 }
 
 .out p .colorb {
-
-
-    color: #3cfccd;
-
+	color: #3cfccd;
 }
 
-
 .out p .colorr {
-
-
-    color: #ff006c;
-    margin-bottom: 20px;
-
+	color: #ff006c;
+	margin-bottom: 20px;
 }
 
 .out input {
-
-    width: 300px;
-    margin-top: 100px;
-    display: block;
-    margin: auto;
-    background: #181818;
-
+	width: 300px;
+	margin-top: 100px;
+	display: block;
+	margin: auto;
+	background: #181818;
 }
 
 .out .separat {
-
-
-    background: #fefefe;
-    height: 2px;
-    width: 10px;
-
-    margin: auto;
-    margin-top: 10px;
-
+	background: #fefefe;
+	height: 2px;
+	width: 10px;
+	margin: auto;
+	margin-top: 10px;
 }
 
 .out .follow {
-
-    font-family: 'gl';
-    margin-top: 30px;
-
+	font-family: 'gl';
+	margin-top: 30px;
 }
 
 .out .imgInsta {
-
-
-    display: block;
-    width: 30px;
-    margin: auto;
-
-    margin-top: 30px;
+	display: block;
+	width: 30px;
+	margin: auto;
+	margin-top: 30px;
 }
+
 
 /*
 
@@ -836,364 +685,251 @@ $(".relat").css('background','url(../img/lunette.png)');
 */
 
 .outAll {
-
-
-    top: 25%;
-    height: 60%;
-    padding-top: 50px;
-    display: none;
-   transition: 1s; 
-
-
+	top: 25%;
+	height: 60%;
+	padding-top: 50px;
+	display: none;
+	transition: 1s;
 }
 
 .bellaOUT h1 {
-
-    height: auto !mportant;
-
+	height: auto !important;
 }
 
 .bellaOUT h1 span {
-
-    transform: translate(0, 0) !important;
-    opacity: 1 !important;
-    width: auto !important;
-    margin-bottom: 20px;
+	transform: translate(0, 0) !important;
+	opacity: 1 !important;
+	width: auto !important;
+	margin-bottom: 20px;
 }
 
-
 .outAll .cacheP {
-
-    position: inherit !important;
-    opacity: 1;
-    transform: translate(0, 0);
-    top: 0;
-    left: 0;
-    height: auto;
-
+	position: inherit !important;
+	opacity: 1;
+	transform: translate(0, 0);
+	top: 0;
+	left: 0;
+	height: auto;
 }
 
 .outAll p {
-    font-size: 1.3rem !important;
+	font-size: 1.3rem !important;
 }
 
 .outAll .cacheP p {
-
-    transform: translate(0, 0) !important;
-    opacity: 1 !important;
-    padding-top: 1px !important;
-    letter-spacing: 1px !important;
-    font-family: 'kl' !important;
-    font-size: 1rem !important;
-    margin-bottom: 20px !important;
-
-
+	transform: translate(0, 0) !important;
+	opacity: 1 !important;
+	padding-top: 1px !important;
+	letter-spacing: 1px !important;
+	font-family: 'kl' !important;
+	font-size: 1rem !important;
+	margin-bottom: 20px !important;
 }
 
-.outAll .follow{
-    
-    font-size: 0.8rem!important;
+.outAll .follow {
+	font-size: 0.8rem!important;
 }
 
 .uppercase {
-
-
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
+
 /*----------------------------------------------------------*/
+
+
 /*----------------------------------------------------------*/
+
+
 /*--------------------- MEDIA QUERY  -----------------------*/
+
+
 /*----------------------------------------------------------*/
+
+
 /*----------------------------------------------------------*/
 
 @media screen and (min-width: 940px) {
-
-    .vilage {
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 50%;
-        background: url(../img/VillageMobile.png);
-        background-size: cover;
-        overflow: hidden;
-
-    }
-
-
-    .menuBot {
-
-        background: #222222;
-        height: 100vh;
-        width: 50%;
-        top: 0;
-        left: 50%;
-        position: absolute;
-
-    }
-
-    .menuBot ul {
-
-        width: 500px;
-        height: 500px;
-        padding-top: 40%;
-        position: absolute;
-        left: 0;
-        top: 10%;
-
-    }
-
-    .menuBot ul li {
-
-
-        margin-left: 80px;
-        font-family: 'gm';
-        font-size: 1.5rem;
-        height: 10px;
-
-
-    }
-
-    .menuBot ul li:hover {
-
-        color: #3cfccd;
-
-    }
-
-    .menuBot .insta {
-
-
-        height: 30px;
-        width: 30px;
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-
-    }
-
-
-    .scandini {
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 50%;
-
-    }
-
-    .lunette .relat {
-
-        background: url('../img/lunette.png');
-        background-size: cover;
-
-    }
-
-    .scandini .relat {
-
-        background: url('../img/ScandicciBig.png');
-        background-size: cover;
-
-    }
-
-    .scafati {
-
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 100vh;
-        width: 50%;
-
-    }
-
-    .scafati .relat {
-
-
-        background: url('../img/ScafatiBig.png');
-        background-size: cover;
-
-    }
-
-
-    .relat ul li {
-
-
-        font-size: 1.1rem;
-
-    }
-
-
-
-    .relat ul .litwo span {
-
-        font-size: 3.5rem;
-
-    }
-
-
-    .relat ul .lithree {
-
-        top: 80%;
-        left: 15%;
-        font-family: 'gl';
-    }
-
-    .relat ul .lithree span {
-
-        display: block;
-        height: 2px;
-        width: 153px;
-        background: #3cfccd;
-        margin-top: 8px;
-
-    }
-
-    .scafati .relat ul .lithree span {
-
-        background: #ff006c;
-
-    }
-
-    .lunette {
-
-        width: 100%;
-        top: 100%;
-    }
-
-    .lunette .relat {
-
-        background: url('../img/lunetteBig.png');
-        background-size: cover;
-
-
-    }
-
-
-    .number {
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 670px;
-        width: 400px;
-
-    }
-
-
-    .numberMen {
-
-        background: black;
-        width: 120px;
-        height: 120px;
-        position: absolute;
-        top: 38%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 100%;
-    }
-
-    .blue {
-
-        width: 140px;
-        height: 140px;
-        top: 38%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 100%;
-    }
-
-    .numberMen p {
-
-        font-size: 3.2rem;
-
-    }
-
-    .numberWomen {
-
-
-        width: 120px;
-        height: 120px;
-
-        top: 59%;
-        left: 50%;
-    }
-
-    .pink {
-
-
-        width: 140px;
-        height: 140px;
-
-        top: 59%;
-        left: 50%;
-
-    }
-
-    .numberWomen p {
-
-
-        margin-top: 65%;
-        height: 50px;
-        font-size: 3.2rem;
-
-    }
-
-
-
-    .contact {
-
-        width: 50%;
-    }
-
-
-
-    .outAll {
-
-
-        top: 0;
-        height: 100vh;
-        padding-top: 250px;
-        width: 50%;
-        left: 50%;
-        transform: translateX(-50%);
-
-
-    }
-    
- 
-
-
-
-.outAll .cacheP {
-
-    position: inherit !important;
-    opacity: 1;
-    transform: translate(0, 0);
-    top: 0;
-    left: 0;
-    height: auto;
-    margin-bottom: 50px    ;
-
+	.about {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 50%;
+		background: url(../img/VillageMobile.png);
+		background-size: cover;
+		overflow: hidden;
+	}
+	.menuBot {
+		background: #222222;
+		height: 100vh;
+		width: 50%;
+		top: 0;
+		left: 50%;
+		position: absolute;
+	}
+	.menuBot ul {
+		width: 500px;
+		height: 500px;
+		padding-top: 40%;
+		position: absolute;
+		left: 0;
+		top: 10%;
+	}
+	.menuBot ul li {
+		margin-left: 80px;
+		font-family: 'gm';
+		font-size: 1.5rem;
+		height: 10px;
+	}
+	.menuBot ul li:hover {
+		color: #3cfccd;
+	}
+	.menuBot .insta {
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+	}
+	.men {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 50%;
+	}
+	.women {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: 100vh;
+		width: 50%;
+	}
+	.relat ul li {
+		font-size: 1.1rem;
+	}
+	.relat ul .litwo span {
+		font-size: 3.5rem;
+	}
+	.relat ul .lithree {
+		top: 80%;
+		left: 15%;
+		font-family: 'gl';
+	}
+	.relat ul .lithree span {
+		display: block;
+		height: 2px;
+		width: 153px;
+		background: #3cfccd;
+		margin-top: 8px;
+	}
+	.women .relat ul .lithree span {
+		background: #ff006c;
+	}
+	.product {
+		width: 100%;
+		top: 100%;
+	}
+	.carroussel div img,
+	.carroussel .slick-center img {
+		width: 90%;
+	}
+	.carroussel:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 20%;
+		height: 100%;
+		background: linear-gradient(to left, rgba(0,0,0,0), #eeeeee);
+		z-index: 1;
+	}
+	.carroussel:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 20%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background: linear-gradient(to right, rgba(0,0,0,0), #eeeeee);
+		z-index: 1;
+	}
+	.number {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 670px;
+		width: 400px;
+	}
+	.numberMen {
+		background: black;
+		width: 120px;
+		height: 120px;
+		position: absolute;
+		top: 38%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 100%;
+	}
+	.numberMen p {
+		font-size: 3.2rem;
+	}
+	.numberWomen {
+		width: 120px;
+		height: 120px;
+		top: 59%;
+		left: 50%;
+	}
+	.numberWomen p {
+		height: 50px;
+		font-size: 3.2rem;
+	}
+	.contact {
+		width: 50%;
+	}
+	.outAll {
+		top: 0;
+		height: 100vh;
+		padding-top: 250px;
+		width: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.outAll .cacheP {
+		position: inherit !important;
+		opacity: 1;
+		transform: translate(0, 0);
+		top: 0;
+		left: 0;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	.outAll input {
+		margin-top: 50px;
+	}
 }
-
-    .outAll input{
-        
-        margin-top: 50px;
-    }
-
-}
-
-
-
-
 
 
 /*_________*/
-.black {
 
-    color: #222 !important;
-    transition: 2s;
+.black {
+	color: #222 !important;
+	transition: 2s;
 }
+
+
+
+/* Animation */
+/* 
+@keyframes womenQte {
+    0% {
+        stroke-dasharray: 100 0;
+    }
+}
+@keyframes menQte {
+    0% {
+        stroke-dasharray: 100 0;
+    }
+} */
