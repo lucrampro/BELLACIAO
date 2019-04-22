@@ -153,12 +153,13 @@ $('document').ready(function() {
                 onComplete: function() {
 
                     TweenMax.to('.cacheH', 0, {
-                        css: { width: 'auto' }
+                        css: {
+                            width: 'auto'
+                        }
                     });
                     TweenMax.to('.cacheP', 0, {
-                        css: {
-                        },
-                        onComplete: function() {
+                        css: {},
+                        onComplete: function () {
 
                             TweenMax.to('.cacheH', 0.5, {
                                 css: {
@@ -176,7 +177,7 @@ $('document').ready(function() {
                                         top: 0,
                                         left: 25,
 
-                                        onComplete: function() {
+                                        onComplete: function () {
                                             TweenMax.to('.b, .poin', 1, {
                                                 y: 0
                                             });
@@ -185,14 +186,50 @@ $('document').ready(function() {
                                                 css: {
                                                     opacity: 1
                                                 },
-                                                onComplete: function() {
+                                                onComplete: function () {
 
                                                     TweenMax.to('.cacheBlack', 2, {
                                                         height: 0,
                                                         ease: Power4.easeOut,
 
-                                                        onComplete: function() {
+                                                        onComplete: function () {
                                                             updateQuantity();
+
+
+                                                            TweenMax.to('.lione', 0.5, {
+
+
+                                                                css: {
+                                                                    y: 0,
+                                                                    opacity: 1
+                                                                }
+
+
+                                                            });
+
+                                                            TweenMax.to('.litwo', 0.5, {
+
+
+                                                                css: {
+                                                                    y: 0,
+                                                                    opacity: 1
+                                                                },
+                                                                delay: 0.3
+
+
+                                                            });
+
+                                                            TweenMax.to('.lithree', 0.5, {
+
+
+                                                                css: {
+                                                                    y: 0,
+                                                                    opacity: 1
+                                                                },
+                                                                delay: 0.6
+
+
+                                                            });
                                                         }
                                                     });
                                                 }
@@ -209,22 +246,101 @@ $('document').ready(function() {
     });
 
 
-    $('.numberMen, .numberWomen').click(function() {
+    $('.numberMen, .numberWomen').click(function () {
 
         if ($('.quantity').hasClass('scale')) {
             $('.quantity').removeClass('scale');
-            TweenMax.to('.cacheH', 0.5, {
-                top: '5%',
-                left: '10%',
-                x: '-50%',
-                y: '-50%',
-            });
+
+            if ($(window).width() < 960) {
+                TweenMax.to('.cacheH', 0.5, {
+                    top: '5%',
+                    left: '12%',
+                    x: '-50%',
+                    y: '-50%',
+                });
+            } else {
+                TweenMax.to('.cacheH', 0.5, {
+                    top: '7%',
+                    left: '5%',
+                    x: '-50%',
+                    y: '-50%',
+                });
+            }
+
+
+            if ($(window).width() < 940) {
+
+                TweenMax.to('.numberMen', 0.5, {
+
+                    top: '50%',
+                    left: '39%'
+
+                });
+
+                TweenMax.to('.numberWomen', 0.5, {
+
+                    top: '50%',
+                    left: '60%'
+
+                });
+            } else {
+
+                TweenMax.to('.numberMen', 0.5, {
+
+                    top: '38%',
+                    left: '50%'
+
+                });
+
+                TweenMax.to('.numberWomen', 0.5, {
+
+                    top: '59%',
+                    left: '50%'
+
+                });
+            }
 
             TweenMax.to('.day', 0.1, {
                 y: '-20px',
                 opacity: 0
             });
+
+
+
+            TweenMax.to('.parrow', 0.5, {
+
+                css: {
+                    opacity: 0
+                }
+
+            });
+            TweenMax.to('.qra', 0.5, {
+
+                css: {
+                    opacity: 0
+                }
+
+            });
+
         } else {
+
+            TweenMax.to('.numberMen', 0.5, {
+
+                top: '60%',
+                left: '20%'
+
+            });
+
+            TweenMax.to('.numberWomen', 0.5, {
+
+                top: '60%',
+                left: '80%'
+
+            });
+
+
+
+
             TweenMax.to('.cacheH', 0.5, {
                 top: '30%',
                 left: '50%',
@@ -236,7 +352,7 @@ $('document').ready(function() {
                 left: '50%',
                 x: '-50%',
                 y: '-50%',
-                onComplete: function() {
+                onComplete: function () {
                     TweenMax.to('.day', 0.5, {
                         y: '0px',
                         opacity: 1
@@ -244,12 +360,27 @@ $('document').ready(function() {
                 }
             });
             $('.quantity').addClass('scale');
+
+            TweenMax.to('.parrow', 0.5, {
+
+                css: {
+                    opacity: 1
+                }
+
+            });
+            TweenMax.to('.qra', 0.5, {
+
+                css: {
+                    opacity: 1
+                }
+
+            });
         }
     });
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    $(".menuBurger").click(function() {
+    $(".menuBurger").click(function () {
 
         if (!$(".menu").hasClass('open')) {
             $('.menu').addClass('open');
@@ -313,7 +444,7 @@ $('document').ready(function() {
     //    -------------
 
 
-    $('.close').click(function() {
+    $('.close').click(function () {
         TweenMax.to('.contact', 0.5, {
             height: 0
         });
@@ -329,7 +460,7 @@ $('document').ready(function() {
         }
     });
 
-    $('.contactOpen, .menuBot ul li').click(function() {
+    $('.contactOpen, .menuBot ul li').click(function () {
 
         if (!$('.cacheH').hasClass('black')) {
             $('.cacheH').addClass('black');
@@ -353,23 +484,23 @@ $('document').ready(function() {
         centerPadding: '200px',
         slidesToShow: 1,
         responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
           },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
           }
         ]
     });
