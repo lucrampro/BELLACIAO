@@ -277,12 +277,22 @@ $('document').ready(function () {
 
         if ($('.quantity').hasClass('scale')) {
             $('.quantity').removeClass('scale');
-            TweenMax.to('.cacheH', 0.5, {
-                top: '7%',
-                left: '5%',
-                x: '-50%',
-                y: '-50%',
-            });
+
+            if ($(window).width() < 960) {
+                TweenMax.to('.cacheH', 0.5, {
+                    top: '5%',
+                    left: '12%',
+                    x: '-50%',
+                    y: '-50%',
+                });
+            } else {
+                TweenMax.to('.cacheH', 0.5, {
+                    top: '7%',
+                    left: '5%',
+                    x: '-50%',
+                    y: '-50%',
+                });
+            }
 
 
             if ($(window).width() < 940) {
