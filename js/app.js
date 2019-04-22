@@ -21,6 +21,40 @@ var mobile =
                     $('.trai2').addClass('bb');
                     $('.trai3').addClass('bb');
 
+
+
+                    TweenMax.to('.infoLunette li', 0.5, {
+
+                        opacity: 1,
+                        y: 0
+                    });
+
+
+
+                    if ($(window).width() > 960) {
+                        TweenMax.to('.numberMen', 0.5, {
+
+                            left: '40%',
+                            top: '8%'
+
+
+                        });
+
+                        TweenMax.to('.numberWomen', 0.5, {
+
+                            left: '60%',
+                            top: '8%'
+
+                        });
+                    }
+
+
+
+                    $('.numberMen').addClass('scaleNumber');
+                    $('.numberWomen').addClass('scaleNumber');
+
+
+
                     TweenMax.to('.men .product', 1.5, {
                         top: 0,
                         ease: Expo.easeOut
@@ -46,6 +80,31 @@ var mobile =
                     $('.trai1').removeClass('bb');
                     $('.trai2').removeClass('bb');
                     $('.trai3').removeClass('bb');
+
+
+                    $('.numberMen').removeClass('scaleNumber');
+                $('.numberWomen').removeClass('scaleNumber');
+
+
+
+
+                    TweenMax.to('.infoLunette li', 0.5, {
+
+                        opacity: 0,
+                        y: '10px'
+                    });
+
+                    TweenMax.to('.numberMen', 0.5, {
+
+                        left: '50%',
+                        top: '38%'
+                    });
+
+                    TweenMax.to('.numberWomen', 0.5, {
+
+                        left: '50%',
+                        top: '59%'
+                    });
 
                     TweenMax.to('.men .product', 1.5, {
                         top: '100%',
@@ -573,3 +632,6 @@ function updateQuantity() {
     $('.numberWomen .circle').css('stroke-dasharray', womenQuantity + ' 100');
     $('.numberMen .circle').css('stroke-dasharray', menQuantity + ' 100');
 }
+
+
+/////

@@ -172,24 +172,24 @@ li {
 }
 
 .about p {
-    
+
     width: auto;
     margin: 0 18% 0 18%;
     font-size: 0.8rem;
-    
-    
+
+
 }
 
-.sign{
-    
+.sign {
+
     width: 30px;
     margin-left: 18%;
-    
-    
+
+
 }
 
-.sign img{
-    
+.sign img {
+
     width: 100%;
 }
 
@@ -611,32 +611,32 @@ h1 span {
 
 
 
-    .parrow {
+.parrow {
 
-        position: fixed;
-        top: 60%;
-        left: 50%;
-        width: 100px;
-        transform: translate(-50%, -50%);
-        opacity: 0;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
 
-    }
+}
 
 
-    .parrow img {
+.parrow img {
 
-        width: 100%;
+    width: 100%;
 
-    }
+}
 
-    .qra {
-        position: absolute;
-        top: 135%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 270px;
-        opacity: 0;
-    }
+.qra {
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    opacity: 0;
+}
 
 
 
@@ -798,6 +798,46 @@ $(".relat").css('background','url(../img/lunette.png)');
     text-transform: uppercase;
 }
 
+/*/////*/
+
+.infoLunette li {
+    
+    font-size: 0.5rem!important;
+    display: inline-block;
+}
+
+.infoLunette li img {
+    
+    margin-right: 10px;
+}
+
+    .valide {
+
+        top: 57%;
+        left: 50%;
+    }
+
+    .like {
+
+        top: 63%;
+        left: 50%;
+    }
+
+    .livraison {
+
+        top: 69%;
+        left: 50%;
+       
+    }
+
+    .timer {
+
+        top: 78%;
+        left: 50%;
+        
+    }
+
+
 
 /*----------------------------------------------------------*/
 
@@ -814,6 +854,40 @@ $(".relat").css('background','url(../img/lunette.png)');
 /*----------------------------------------------------------*/
 
 @media screen and (min-width: 940px) {
+    
+    
+    
+.infoLunette li {
+    
+    font-size: 0.8rem!important;
+    display: inline-block;
+}
+
+    .valide {
+
+        top: 57%;
+        left: 50%;
+    }
+
+    .like {
+
+        top: 63%;
+        left: 50%;
+    }
+
+    .livraison {
+
+        top: 69%;
+        left: 50%;
+       
+    }
+
+    .timer {
+
+        top: 78%;
+        left: 50%;
+        
+    }
     .about {
         position: absolute;
         top: 0;
@@ -879,10 +953,11 @@ $(".relat").css('background','url(../img/lunette.png)');
         width: 50%;
     }
 
-    .sign{
-        
+    .sign {
+
         width: 100px;
     }
+
     .women {
         position: absolute;
         bottom: 0;
@@ -987,6 +1062,11 @@ $(".relat").css('background','url(../img/lunette.png)');
 
         width: 100%;
 
+    }
+    
+    .scaleNumber{
+        
+        transform: translate(-50%,-50%) scale(0.6)!important;
     }
 
     .qra {
